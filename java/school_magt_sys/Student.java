@@ -1,3 +1,4 @@
+package school_magt_sys;
 /**
  * Created on 18-06-24
  * This class is responsible for keeping the 
@@ -53,4 +54,48 @@ public class Student
          */
         this.feesPaid+=fees;
     }
+    //getters
+
+    /**
+    * @return getName returns the name of current student
+    */
+    public String getName()
+    {
+        return name;
+    }
+
+    /**
+     * @return getId returns the current student's id
+     */
+
+    public int getId()
+    {
+        return id;
+    }
+
+    /**
+     * @return the grade of the student
+     */
+    public int getGrade()
+    {
+        return grade;
+    }
+
+        /**
+    * @return getFeesTotal returns the total fees paid
+    */
+    public int getFeesTotal()
+    {
+        return feesTotal;
+    }
+
+    /**
+     * @return getFeesPaid returns the current paid
+     */
+
+    public int getFeesPaid()
+    {
+        return feesPaid;
+    }
+
 }
