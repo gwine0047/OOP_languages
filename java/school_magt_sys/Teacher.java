@@ -1,4 +1,5 @@
 package school_magt_sys;
+
 /**
  * class keeps track of teacher's id, name and salary
  */
@@ -55,6 +56,15 @@ public class Teacher
      */
     public void setSalary(int salary)
     {
-        this.salary=salary
+        this.salary=salary;
+    }
+
+/**
+ * removes from the total money earned by the school
+ * to pay 
+ */
+    public void receiveSalary(int salary)
+    {
+
     }
 }

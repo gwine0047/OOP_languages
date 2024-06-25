@@ -27,7 +27,7 @@ public class Student
         // this.id is id from the student class
         // which is initialized to the id provided
         feesPaid=0; //you may use this.feesPaid
-        feesTotal=30000
+        feesTotal=30000;
         this.id=id;
         this.name=name;
         this.grade=grade;
@@ -46,13 +46,14 @@ public class Student
         this.grade=grade;
     }
 
-    public void updateFeesPaid(int fees)
+    public void payFees(int fees)
     {
         /**
          * Add fees to feesPaid field
          * @param fees fees paid by student
          */
         this.feesPaid+=fees;
+        School.updateTotalMoneyEarned(feesPaid);
     }
     //getters
 
@@ -96,6 +97,14 @@ public class Student
     public int getFeesPaid()
     {
         return feesPaid;
+    }
+
+    /**
+     * gets the fees remaining
+     */
+    public int getRemainingFees()
+    {
+        return feesTotal - feesPaid;
     }
 
 }
